@@ -1,0 +1,1416 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
+* { 
+  padding: 0; 
+  margin: 0; 
+  font-family: "Helvetica Neue";
+}
+.center {
+  text-align: center;
+}
+.header {
+  margin: 20px 0px 20px 0px;
+  padding: 30px 0px 30px 0px;
+}
+.description {
+  margin: 10px 10px 20px 10px;
+  font-size: 20px;
+}
+.sideMargins {
+  margin: 0px 20px 0px 20px;
+}
+.fullMargins {
+  margin: 10px;
+}
+.middle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.underline {
+  text-decoration: underline;
+}
+
+/* Nav bar*/
+.sections {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #4056A1;
+  overflow: hidden;
+  list-style: none;
+  font-family: "Montserrat", sans-serif;
+}
+.space {
+  display: flex;
+  justify-content: space-between;
+  background-color: #4056A1;
+/*   position: fixed;
+  top: 0;
+  width: 100%; */
+}
+
+/* Link Colors and Hover Effect */
+a:link, a:visited {
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  width: 150px;
+}
+
+.architecture:link {
+  background-color: #0E491D;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  font-family: "Montserrat", sans-serif;
+}
+.architecture:hover {
+  background-color: #146728;
+  font-family: "Montserrat", sans-serif;
+}
+
+.film:link {
+  background-color: #F13C1F;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  font-family: "Montserrat", sans-serif;
+}
+.film:hover {
+  background-color: #F3573F;
+  font-family: "Montserrat", sans-serif;
+}
+
+.literature:link {
+  background-color: #F8BB76;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  font-family: "Montserrat", sans-serif;
+/*   padding-right: 75px;
+  padding-left: 75px; */
+}
+.literature:hover {
+  background-color: #F9C58B; 
+  font-family: "Montserrat", sans-serif;
+}
+
+.visualArts:link, .visualArts:visited {
+  background-color: #795484ff;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  font-family: "Montserrat", sans-serif;
+/*   padding-right: 75px;
+  padding-left: 75px; */
+}
+.visualArts:hover {
+  background-color: #9a75a5ff;
+  font-family: "Montserrat", sans-serif;
+}
+
+.logo:link {
+  background-color: #4056A1;
+  padding-left: 0px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.moreResources:link {
+  background-color: #f2cc02;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  font-family: "Montserrat", sans-serif;
+/*   padding-right: 50px;
+  padding-left: 50px; */
+}
+.moreResources:hover {
+  background-color: #FDD90D;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Home CSS */
+.home {
+  color: black;
+  background-image: url('pictures/banner\ for\ arcane.jpg');
+}
+.homeST {
+  font-size: 30px;
+}
+.homeHT {
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.homeImg {
+  width: 700px; 
+  border: 2px solid #4056A1;
+  border-radius: 20px;
+  float: left;
+  margin: 5px 20px 5px 0px;
+}
+.homeImgColor {
+  width: 700px;
+  border: 2px solid white;
+  border-radius: 20px;
+  float: left;
+  margin: 5px 20px 5px 0px;
+}
+.homeColor {
+  background-color: #4056A1;
+  color: white;
+}
+.displaySide {
+  display: flex;
+  justify-content: space-between;
+}
+.stat1P {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+}
+section {
+  margin: 20px 0px 20px 0px;
+  padding: 20px 0px 20px 0px;
+}
+.topBtn {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin: auto;
+}
+
+.topBtn:hover{
+  background-color: white;
+}
+
+.homeArtL {
+  border: 2px solid #000000;
+  border-radius: 30px;
+  background-color: white;
+  font-family: sans-serif;
+  font-size: 17px;
+  padding: 10px;
+  width: 600px;
+  font-family: 'Montserrat', sans-serif;
+  margin: auto;
+}
+.headBtn {
+  color: #000000;
+  border: 2px solid white;
+  border-radius: 30px;
+  background-color: white;
+  font-family: sans-serif;
+  font-size: 17px;
+  padding: 10px;
+  width: 150px;
+  font-family: 'Montserrat', sans-serif;
+}
+.headBtn:hover {
+  background-color: #F9F7F1;
+  border: 2px solid #F9F7F1;
+  cursor: pointer;
+}
+
+.spec {
+  margin-bottom: 5px;
+}
+
+.bottomBtn {
+  color: #000000;
+  border: 2px solid #000000;
+  border-radius: 30px;
+  background-color: white;
+  font-family: sans-serif;
+  font-size: 17px;
+  padding: 10px;
+  width: 600px;
+  font-family: 'Montserrat', sans-serif;
+}
+.bottomBtn:hover {
+  background-color: white;
+  cursor: pointer;
+}
+
+.nonColBtn {
+  background-color: #465EAF;
+  color: white;
+}
+
+.quote {
+  background-color: #0E491D;
+  color: white;
+}
+
+/* Architecture CSS */
+.architectureH {
+  background-color: #0E491D;
+  color: white;
+}
+
+.architectureCol1 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.architectureGT {
+  background-color: #83ce96;
+}
+
+.a1{
+ position: relative;
+ width: 250px;
+ height: 250px;
+ float: left;
+ margin-right: 10px;
+}
+
+.a1 div{
+ position: absolute;
+ bottom: 0;
+ right: 0;
+ background: #0b471a;
+ color: white;
+ margin-bottom: 5px;
+ font-family: sans-serif;
+ opacity: 0;
+ visibility: hidden;
+ -webkit-transition: visibility 0s, opacity 0.5s linear; 
+ transition: visibility 0s, opacity 0.5s linear;
+}
+
+.a1:hover{
+ cursor: pointer;
+}
+
+.a1:hover div {
+  width: 150px;
+  padding: 8px 15px;
+  visibility: visible;
+  opacity: 0.7; 
+}
+
+.a2{
+ position: relative;
+ width: 250px;
+ height: 250px;
+ float: left;
+ margin-right: 10px;
+}
+
+.a2 div{
+ position: absolute;
+ bottom: 0;
+ right: 0;
+ background: #d7b547;
+ color: white;
+ margin-bottom: 5px;
+ font-family: sans-serif;
+ opacity: 0;
+ visibility: hidden;
+ -webkit-transition: visibility 0s, opacity 0.5s linear; 
+ transition: visibility 0s, opacity 0.5s linear;
+}
+
+.a2:hover{
+ cursor: pointer;
+}
+
+.a2:hover div {
+  width: 150px;
+  padding: 8px 15px;
+  visibility: visible;
+  opacity: 0.7; 
+}
+
+.a3{
+ position: relative;
+ width: 250px;
+ height: 250px;
+ float: left;
+ margin-right: 10px;
+}
+
+.a3 div{
+ position: absolute;
+ bottom: 0;
+ right: 0;
+ background: #59727d;
+ color: white;
+ margin-bottom: 5px;
+ font-family: sans-serif;
+ opacity: 0;
+ visibility: hidden;
+ -webkit-transition: visibility 0s, opacity 0.5s linear; 
+ transition: visibility 0s, opacity 0.5s linear;
+}
+
+.a3:hover{
+ cursor: pointer;
+}
+
+.a3:hover div {
+  width: 150px;
+  padding: 8px 15px;
+  visibility: visible;
+  opacity: 0.7; 
+}
+
+.a4{
+ position: relative;
+ width: 250px;
+ height: 250px;
+ float: left;
+ margin-right: 10px;
+}
+
+.a4 div{
+ position: absolute;
+ bottom: 0;
+ right: 0;
+ background: #555555;
+ color: white;
+ margin-bottom: 5px;
+ font-family: sans-serif;
+ opacity: 0;
+ visibility: hidden;
+ -webkit-transition: visibility 0s, opacity 0.5s linear; 
+ transition: visibility 0s, opacity 0.5s linear;
+}
+
+.a4:hover{
+ cursor: pointer;
+}
+
+.a4:hover div {
+  width: 150px;
+  padding: 8px 15px;
+  visibility: visible;
+  opacity: 0.7; 
+}
+
+.a5{
+ position: relative;
+ width: 250px;
+ height: 250px;
+ float: left;
+ margin-right: 10px;
+}
+
+.a5 div{
+ position: absolute;
+ bottom: 0;
+ right: 0;
+ background: #75816b;
+ color: white;
+ margin-bottom: 5px;
+ font-family: sans-serif;
+ opacity: 0;
+ visibility: hidden;
+ -webkit-transition: visibility 0s, opacity 0.5s linear; 
+ transition: visibility 0s, opacity 0.5s linear;
+}
+
+.a5:hover{
+ cursor: pointer;
+}
+
+.a5:hover div {
+  width: 150px;
+  padding: 8px 15px;
+  visibility: visible;
+  opacity: 0.7; 
+}
+
+.a6{
+ position: relative;
+ width: 250px;
+ height: 250px;
+ float: left;
+ margin-right: 10px;
+}
+
+.a6 div{
+ position: absolute;
+ bottom: 0;
+ right: 0;
+ background: #0038A8;
+ color: white;
+ margin-bottom: 5px;
+ font-family: sans-serif;
+ opacity: 0;
+ visibility: hidden;
+ -webkit-transition: visibility 0s, opacity 0.5s linear; 
+ transition: visibility 0s, opacity 0.5s linear;
+}
+
+.a6:hover{
+ cursor: pointer;
+}
+
+.a6:hover div {
+  width: 150px;
+  padding: 8px 15px;
+  visibility: visible;
+  opacity: 0.7; 
+}
+
+.a7{
+ position: relative;
+ width: 250px;
+ height: 250px;
+ float: left;
+ margin-right: 10px;
+}
+
+.a7 div{
+ position: absolute;
+ bottom: 0;
+ right: 0;
+ background: #e05e00;
+ color: white;
+ margin-bottom: 5px;
+ font-family: sans-serif;
+ opacity: 0;
+ visibility: hidden;
+ -webkit-transition: visibility 0s, opacity 0.5s linear; 
+ transition: visibility 0s, opacity 0.5s linear;
+}
+
+.a7:hover{
+ cursor: pointer;
+}
+
+.a7:hover div {
+  width: 150px;
+  padding: 8px 15px;
+  visibility: visible;
+  opacity: 0.7; 
+}
+
+.a8{
+ position: relative;
+ width: 250px;
+ height: 250px;
+ float: left;
+ margin-right: 10px;
+}
+
+.a8 div{
+ position: absolute;
+ bottom: 0;
+ right: 0;
+ background: #f9a602;
+ color: white;
+ margin-bottom: 5px;
+ font-family: sans-serif;
+ opacity: 0;
+ visibility: hidden;
+ -webkit-transition: visibility 0s, opacity 0.5s linear; 
+ transition: visibility 0s, opacity 0.5s linear;
+}
+
+.a8:hover{
+ cursor: pointer;
+}
+
+.a8:hover div {
+  width: 150px;
+  padding: 8px 15px;
+  visibility: visible;
+  opacity: 0.7; 
+}
+
+.a9{
+ position: relative;
+ width: 250px;
+ height: 250px;
+ float: left;
+ margin-right: 10px;
+}
+
+.a9 div{
+ position: absolute;
+ bottom: 0;
+ right: 0;
+ background: #997864;
+ color: white;
+ margin-bottom: 5px;
+ font-family: sans-serif;
+ opacity: 0;
+ visibility: hidden;
+ -webkit-transition: visibility 0s, opacity 0.5s linear; 
+ transition: visibility 0s, opacity 0.5s linear;
+}
+
+.a9:hover{
+ cursor: pointer;
+}
+
+.a9:hover div {
+  width: 150px;
+  padding: 8px 15px;
+  visibility: visible;
+  opacity: 0.7; 
+}
+
+.a10{
+ position: relative;
+ width: 250px;
+ height: 250px;
+ float: left;
+ margin-right: 10px;
+}
+
+.a10 div{
+ position: absolute;
+ bottom: 0;
+ right: 0;
+ background: #CC6600;
+ color: white;
+ margin-bottom: 5px;
+ font-family: sans-serif;
+ opacity: 0;
+ visibility: hidden;
+ -webkit-transition: visibility 0s, opacity 0.5s linear; 
+ transition: visibility 0s, opacity 0.5s linear;
+}
+
+.a10:hover{
+ cursor: pointer;
+}
+
+.a10:hover div {
+  width: 150px;
+  padding: 8px 15px;
+  visibility: visible;
+  opacity: 0.7; 
+}
+
+
+/* Film CSS */
+.filmH {
+  background-color: #F13C1F;
+  color: white;
+}
+.longFilms, .shortFilms {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.filmGT {
+  background-color: #ffd7d1;
+}
+
+/* Literature CSS */
+.literatureH {
+  background-color: #F8BB76;
+  color: white;
+}
+.literatureRW {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+.literatureGT {
+  background-color: #f8e2c9;
+}
+
+.litspec {
+  margin-bottom: 40px;
+}
+
+/* Visual Arts CSS */
+.visualArtsH {
+  background-color: #795484ff;
+  color: white;
+}
+.visualArtG {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+}
+.visualArtsGT {
+  background-color: #d1b3dbff;
+}
+
+.p1{
+ position: relative;
+ width: 250px;
+ height: 250px;
+ float: left;
+ margin-right: 10px;
+}
+
+.p1 div{
+ position: absolute;
+ bottom: 0;
+ right: 0;
+ background: #958fa2;
+ color: white;
+ margin-bottom: 5px;
+ font-family: sans-serif;
+ opacity: 0;
+ visibility: hidden;
+ -webkit-transition: visibility 0s, opacity 0.5s linear; 
+ transition: visibility 0s, opacity 0.5s linear;
+}
+
+.p1:hover{
+ cursor: pointer;
+}
+
+.p1:hover div {
+  width: 150px;
+  padding: 8px 15px;
+  visibility: visible;
+  opacity: 0.7; 
+}
+
+.p2{
+ position: relative;
+ width: 250px;
+ height: 250px;
+ float: left;
+ margin-right: 10px;
+}
+
+.p2 div{
+ position: absolute;
+ bottom: 0;
+ right: 0;
+ background: #dbb600;
+ color: white;
+ margin-bottom: 5px;
+ font-family: sans-serif;
+ opacity: 0;
+ visibility: hidden;
+ -webkit-transition: visibility 0s, opacity 0.5s linear; 
+ transition: visibility 0s, opacity 0.5s linear;
+}
+
+.p2:hover{
+ cursor: pointer;
+}
+
+.p2:hover div {
+  width: 150px;
+  padding: 8px 15px;
+  visibility: visible;
+  opacity: 0.7; 
+}
+
+.p3{
+ position: relative;
+ width: 250px;
+ height: 250px;
+ float: left;
+ margin-right: 10px;
+}
+
+.p3 div{
+ position: absolute;
+ bottom: 0;
+ right: 0;
+ background: #68a0b0;
+ color: white;
+ margin-bottom: 5px;
+ font-family: sans-serif;
+ opacity: 0;
+ visibility: hidden;
+ -webkit-transition: visibility 0s, opacity 0.5s linear; 
+ transition: visibility 0s, opacity 0.5s linear;
+}
+
+.p3:hover{
+ cursor: pointer;
+}
+
+.p3:hover div {
+  width: 150px;
+  padding: 8px 15px;
+  visibility: visible;
+  opacity: 0.7; 
+}
+
+.p4{
+ position: relative;
+ width: 250px;
+ height: 250px;
+ float: left;
+ margin-right: 10px;
+}
+
+.p4 div{
+ position: absolute;
+ bottom: 0;
+ right: 0;
+ background: #000000;
+ color: white;
+ margin-bottom: 5px;
+ font-family: sans-serif;
+ opacity: 0;
+ visibility: hidden;
+ -webkit-transition: visibility 0s, opacity 0.5s linear; 
+ transition: visibility 0s, opacity 0.5s linear;
+}
+
+.p4:hover{
+ cursor: pointer;
+}
+
+.p4:hover div {
+  width: 150px;
+  padding: 8px 15px;
+  visibility: visible;
+  opacity: 0.7; 
+}
+
+.p5{
+ position: relative;
+ width: 250px;
+ height: 250px;
+ float: left;
+ margin-right: 10px;
+}
+
+.p5 div{
+ position: absolute;
+ bottom: 0;
+ right: 0;
+ background: #cc5500;
+ color: white;
+ margin-bottom: 5px;
+ font-family: sans-serif;
+ opacity: 0;
+ visibility: hidden;
+ -webkit-transition: visibility 0s, opacity 0.5s linear; 
+ transition: visibility 0s, opacity 0.5s linear;
+}
+
+.p5:hover{
+ cursor: pointer;
+}
+
+.p5:hover div {
+  width: 150px;
+  padding: 8px 15px;
+  visibility: visible;
+  opacity: 0.7; 
+}
+
+.p6{
+ position: relative;
+ width: 250px;
+ height: 250px;
+ float: left;
+ margin-right: 10px;
+}
+
+.p6 div{
+ position: absolute;
+ bottom: 0;
+ right: 0;
+ background: #006400;
+ color: white;
+ margin-bottom: 5px;
+ font-family: sans-serif;
+ opacity: 0;
+ visibility: hidden;
+ -webkit-transition: visibility 0s, opacity 0.5s linear; 
+ transition: visibility 0s, opacity 0.5s linear;
+}
+
+.p6:hover{
+ cursor: pointer;
+}
+
+.p6:hover div {
+  width: 150px;
+  padding: 8px 15px;
+  visibility: visible;
+  opacity: 0.7; 
+}
+
+.p7{
+ position: relative;
+ width: 250px;
+ height: 250px;
+ float: left;
+ margin-right: 10px;
+}
+
+.p7 div{
+ position: absolute;
+ bottom: 0;
+ right: 0;
+ background: #d2aa6d;
+ color: white;
+ margin-bottom: 5px;
+ font-family: sans-serif;
+ opacity: 0;
+ visibility: hidden;
+ -webkit-transition: visibility 0s, opacity 0.5s linear; 
+ transition: visibility 0s, opacity 0.5s linear;
+}
+
+.p7:hover{
+ cursor: pointer;
+}
+
+.p7:hover div {
+  width: 150px;
+  padding: 8px 15px;
+  visibility: visible;
+  opacity: 0.7; 
+}
+
+.p8{
+ position: relative;
+ width: 250px;
+ height: 250px;
+ float: left;
+ margin-right: 10px;
+}
+
+.p8 div{
+ position: absolute;
+ bottom: 0;
+ right: 0;
+ background: #1e140a;
+ color: white;
+ margin-bottom: 5px;
+ font-family: sans-serif;
+ opacity: 0;
+ visibility: hidden;
+ -webkit-transition: visibility 0s, opacity 0.5s linear; 
+ transition: visibility 0s, opacity 0.5s linear;
+}
+
+.p8:hover{
+ cursor: pointer;
+}
+
+.p8:hover div {
+  width: 150px;
+  padding: 8px 15px;
+  visibility: visible;
+  opacity: 0.7; 
+}
+
+.p9{
+ position: relative;
+ width: 250px;
+ height: 250px;
+ float: left;
+ margin-right: 10px;
+}
+
+.p9 div{
+ position: absolute;
+ bottom: 0;
+ right: 0;
+ background: #111e6c;
+ color: white;
+ margin-bottom: 5px;
+ font-family: sans-serif;
+ opacity: 0;
+ visibility: hidden;
+ -webkit-transition: visibility 0s, opacity 0.5s linear; 
+ transition: visibility 0s, opacity 0.5s linear;
+}
+
+.p9:hover{
+ cursor: pointer;
+}
+
+.p9:hover div {
+  width: 150px;
+  padding: 8px 15px;
+  visibility: visible;
+  opacity: 0.7; 
+}
+
+.p10{
+ position: relative;
+ width: 250px;
+ height: 250px;
+ float: left;
+ margin-right: 10px;
+}
+
+.p10 div{
+ position: absolute;
+ bottom: 0;
+ right: 0;
+ background: #e1ad01;
+ color: white;
+ margin-bottom: 5px;
+ font-family: sans-serif;
+ opacity: 0;
+ visibility: hidden;
+ -webkit-transition: visibility 0s, opacity 0.5s linear; 
+ transition: visibility 0s, opacity 0.5s linear;
+}
+
+.p10:hover{
+ cursor: pointer;
+}
+
+.p10:hover div {
+  width: 150px;
+  padding: 8px 15px;
+  visibility: visible;
+  opacity: 0.7; 
+}
+
+.s1{
+ position: relative;
+ width: 250px;
+ height: 250px;
+ float: left;
+ margin-right: 10px;
+}
+
+.s1 div{
+ position: absolute;
+ bottom: 0;
+ right: 0;
+ background: #5d486a;
+ color: white;
+ margin-bottom: 5px;
+ font-family: sans-serif;
+ opacity: 0;
+ visibility: hidden;
+ -webkit-transition: visibility 0s, opacity 0.5s linear; 
+ transition: visibility 0s, opacity 0.5s linear;
+}
+
+.s1:hover{
+ cursor: pointer;
+}
+
+.s1:hover div {
+  width: 150px;
+  padding: 8px 15px;
+  visibility: visible;
+  opacity: 0.7; 
+}
+
+.s2{
+ position: relative;
+ width: 250px;
+ height: 250px;
+ float: left;
+ margin-right: 10px;
+}
+
+.s2 div{
+ position: absolute;
+ bottom: 0;
+ right: 0;
+ background: #5d2d24;
+ color: white;
+ margin-bottom: 5px;
+ font-family: sans-serif;
+ opacity: 0;
+ visibility: hidden;
+ -webkit-transition: visibility 0s, opacity 0.5s linear; 
+ transition: visibility 0s, opacity 0.5s linear;
+}
+
+.s2:hover{
+ cursor: pointer;
+}
+
+.s2:hover div {
+  width: 150px;
+  padding: 8px 15px;
+  visibility: visible;
+  opacity: 0.7; 
+}
+
+.s3{
+ position: relative;
+ width: 250px;
+ height: 250px;
+ float: left;
+ margin-right: 10px;
+}
+
+.s3 div{
+ position: absolute;
+ bottom: 0;
+ right: 0;
+ background: #b3e5fc;
+ color: white;
+ margin-bottom: 5px;
+ font-family: sans-serif;
+ opacity: 0;
+ visibility: hidden;
+ -webkit-transition: visibility 0s, opacity 0.5s linear; 
+ transition: visibility 0s, opacity 0.5s linear;
+}
+
+.s3:hover{
+ cursor: pointer;
+}
+
+.s3:hover div {
+  width: 150px;
+  padding: 8px 15px;
+  visibility: visible;
+  opacity: 0.7; 
+}
+
+.s4{
+ position: relative;
+ width: 250px;
+ height: 250px;
+ float: left;
+ margin-right: 10px;
+}
+
+.s4 div{
+ position: absolute;
+ bottom: 0;
+ right: 0;
+ background: #888c8d;
+ color: white;
+ margin-bottom: 5px;
+ font-family: sans-serif;
+ opacity: 0;
+ visibility: hidden;
+ -webkit-transition: visibility 0s, opacity 0.5s linear; 
+ transition: visibility 0s, opacity 0.5s linear;
+}
+
+.s4:hover{
+ cursor: pointer;
+}
+
+.s4:hover div {
+  width: 150px;
+  padding: 8px 15px;
+  visibility: visible;
+  opacity: 0.7; 
+}
+
+.s5{
+ position: relative;
+ width: 250px;
+ height: 250px;
+ float: left;
+ margin-right: 10px;
+}
+
+.s5 div{
+ position: absolute;
+ bottom: 0;
+ right: 0;
+ background: #c8af55;
+ color: white;
+ margin-bottom: 5px;
+ font-family: sans-serif;
+ opacity: 0;
+ visibility: hidden;
+ -webkit-transition: visibility 0s, opacity 0.5s linear; 
+ transition: visibility 0s, opacity 0.5s linear;
+}
+
+.s5:hover{
+ cursor: pointer;
+}
+
+.s5:hover div {
+  width: 150px;
+  padding: 8px 15px;
+  visibility: visible;
+  opacity: 0.7; 
+}
+
+.c1{
+ position: relative;
+ width: 250px;
+ height: 250px;
+ float: left;
+ margin-right: 10px;
+}
+
+.c1 div{
+ position: absolute;
+ bottom: 0;
+ right: 0;
+ background: #bebebe;
+ color: white;
+ margin-bottom: 5px;
+ font-family: sans-serif;
+ opacity: 0;
+ visibility: hidden;
+ -webkit-transition: visibility 0s, opacity 0.5s linear; 
+ transition: visibility 0s, opacity 0.5s linear;
+}
+
+.c1:hover{
+ cursor: pointer;
+}
+
+.c1:hover div {
+  width: 150px;
+  padding: 8px 15px;
+  visibility: visible;
+  opacity: 0.7; 
+}
+
+.c2{
+ position: relative;
+ width: 250px;
+ height: 250px;
+ float: left;
+ margin-right: 10px;
+}
+
+.c2 div{
+ position: absolute;
+ bottom: 0;
+ right: 0;
+ background: #3e4c54;
+ color: white;
+ margin-bottom: 5px;
+ font-family: sans-serif;
+ opacity: 0;
+ visibility: hidden;
+ -webkit-transition: visibility 0s, opacity 0.5s linear; 
+ transition: visibility 0s, opacity 0.5s linear;
+}
+
+.c2:hover{
+ cursor: pointer;
+}
+
+.c2:hover div {
+  width: 150px;
+  padding: 8px 15px;
+  visibility: visible;
+  opacity: 0.7; 
+}
+
+.c3{
+ position: relative;
+ width: 250px;
+ height: 250px;
+ float: left;
+ margin-right: 10px;
+}
+
+.c3 div{
+ position: absolute;
+ bottom: 0;
+ right: 0;
+ background: #d6c7a0;
+ color: white;
+ margin-bottom: 5px;
+ font-family: sans-serif;
+ opacity: 0;
+ visibility: hidden;
+ -webkit-transition: visibility 0s, opacity 0.5s linear; 
+ transition: visibility 0s, opacity 0.5s linear;
+}
+
+.c3:hover{
+ cursor: pointer;
+}
+
+.c3:hover div {
+  width: 150px;
+  padding: 8px 15px;
+  visibility: visible;
+  opacity: 0.7; 
+}
+
+.c4{
+ position: relative;
+ width: 250px;
+ height: 250px;
+ float: left;
+ margin-right: 10px;
+}
+
+.c4 div{
+ position: absolute;
+ bottom: 0;
+ right: 0;
+ background: #55765c;
+ color: white;
+ margin-bottom: 5px;
+ font-family: sans-serif;
+ opacity: 0;
+ visibility: hidden;
+ -webkit-transition: visibility 0s, opacity 0.5s linear; 
+ transition: visibility 0s, opacity 0.5s linear;
+}
+
+.c4:hover{
+ cursor: pointer;
+}
+
+.c4:hover div {
+  width: 150px;
+  padding: 8px 15px;
+  visibility: visible;
+  opacity: 0.7; 
+}
+
+.c5{
+ position: relative;
+ width: 250px;
+ height: 250px;
+ float: left;
+ margin-right: 10px;
+}
+
+.c5 div{
+ position: absolute;
+ bottom: 0;
+ right: 0;
+ background: #ffd300;
+ color: white;
+ margin-bottom: 5px;
+ font-family: sans-serif;
+ opacity: 0;
+ visibility: hidden;
+ -webkit-transition: visibility 0s, opacity 0.5s linear; 
+ transition: visibility 0s, opacity 0.5s linear;
+}
+
+.c5:hover{
+ cursor: pointer;
+}
+
+.c5:hover div {
+  width: 150px;
+  padding: 8px 15px;
+  visibility: visible;
+  opacity: 0.7; 
+}
+
+/* More Resources CSS */
+.resources {
+  background-color: #f2cc02;
+  color: white;
+}
+.regionS {
+  background-color: #FEF8D7;
+}
+.regionOut {
+  margin: 10px 0px 10px 0px;
+  font-size: 20px;
+}
+.regionL {
+  font-size: 20px;
+}
+.regionD {
+  border: 1px solid #000000;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: white;
+  font-size: 20px;
+}
+.resourcesImg {
+  width: 1200px;
+  border: 2px solid #000000;
+  border-radius: 20px;
+  margin: 20px 0px 10px 0px;
+}
+.regionSBtn {
+  background-color: white;
+  border: 1px solid #000000;
+  padding: 10px;
+  border-radius: 10px;
+  color: #000000;
+}
+
+
+/* Other CSS */
+.hands{
+  height:63px;
+  width:63px;
+  object-fit:cover;
+  float: left;
+}
+
+.collapseCSS {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 650px;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+}
+
+.collapseCSS:hover {
+  background-color: #FAC489
+}
+
+.active, .collapsible1:hover {
+  background-color: #FAC489;
+}
+
+.text {
+  padding: 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.active, .collapsible2:hover {
+  background-color: #FAC489;
+}
+
+.active, .collapsible3:hover {
+  background-color: #FAC489;
+}
+
+.active, .collapsible4:hover {
+  background-color: #FAC489;
+}
+
+.active, .collapsible5:hover {
+  background-color: #FAC489;
+}
+
+.active, .collapsible6:hover {
+  background-color: #FAC489;
+}
+.active, .collapsible7:hover {
+  background-color: #FAC489;
+}
+
+.active, .collapsible8:hover {
+  background-color: #FAC489;
+}
+
+.active, .collapsible9:hover {
+  background-color: #FAC489;
+}
+
+.active, .collapsible10:hover {
+  background-color: #FAC489;
+}
+.active, .collapsible11:hover {
+  background-color: #FAC489;
+}
+.active, .collapsible12:hover {
+  background-color: #FAC489;
+}
+
+.ss {
+  margin-bottom: 55px;
+}
